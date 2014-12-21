@@ -1,0 +1,6 @@
+com\memetoclasm\data\jpa\service\CitySearchCriteria.class
+com\memetoclasm\data\jpa\domain\Hotel.class
+com\memetoclasm\data\jpa\service\CityRepository.class
+com\memetoclasm\data\jpa\domain\City.class
+com\memetoclasm\data\jpa\service\HotelRepository.class
+com\memetoclasm\data\jpa\SampleDataRestApplication.class

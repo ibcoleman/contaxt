@@ -1,0 +1,31 @@
+{
+  "name": "brunch-with-brunch",
+  "version": "0.0.0",
+  "homepage": "https://github.com/yourname/brunch-with-brunch",
+  "authors": [
+    "Your Name <email@address.com>"
+  ],
+  "description": "Package description",
+  "main": "main.js",
+  "keywords": [
+    "keywords"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "~0.12.2",
+    "bootstrap": "~3.3.1",
+    "react-bootstrap": "~0.13.0",
+    "flux": "~2.0.2"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "flux": "~2.0.2"
+  }
+}
