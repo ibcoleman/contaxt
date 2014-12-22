@@ -2,28 +2,17 @@
 <html>
 <head>
     <!-- bower:js -->
-    <!--<script src="../bower_components/react-bootstrap/react-bootstrap.js"></script>-->
     <!-- endbower -->
     <link href="./stylesheets/app.css" rel="stylesheet" type="text/css">
     <script src="./javascripts/app.js"></script>
     <script src="./javascripts/vendor.js"></script>
-    <script src="../bower_components/react/JSXTransformer.js"></script>
-    <script>require('app');</script>
+    <script>
+        require('app');
+    </script>
 </head>
 <body>
 <div id="example"></div>
-
-<script type="text/jsx">
-    /** @jsx React.DOM */
-    var MyComponent = React.createClass({
-        render: function() {
-            return <h1>Hello, World, Sweet, World!</h1>;
-        }
-    });
-
-    React.render(
-            <MyComponent />, document.getElementById('example')
-    );
-</script>
+<div id="alertnode"></div>
+<div id="hello"></div>
 </body>
 </html>

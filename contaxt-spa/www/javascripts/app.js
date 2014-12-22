@@ -94,10 +94,21 @@ require.register("app", function(exports, require, module) {
 
 var hello = require('scripts/helloWorld').hello;
 
-
 $(document).ready(function() {
     console.log(hello());
     document.getElementById('hello').innerText = hello();
+});
+
+});
+
+require.register("app", function(exports, require, module) {
+var MyPanel = require('scripts/mainUI').MyPanel;
+var MyComponent = require('scripts/mainUI').MyComponent;
+
+$(document).ready(function() {
+    /** @jsx React.DOM */
+    React.render(React.createElement(MyComponent, null), document.getElementById('example'));
+    React.render(React.createElement(MyPanel, null), document.getElementById('alertnode'));
 });
 
 });
@@ -110,5 +121,24 @@ exports.hello = function(){
 
 });
 
-;
+;require.register("scripts/mainUI", function(exports, require, module) {
+
+exports.MyComponent = React.createClass({displayName: "MyComponent",
+    render: function() {
+        return React.createElement("h1", null, "Hello, World, Sweet, World!");
+    }
+});
+
+var Alert = ReactBootstrap.Alert;
+exports.MyPanel = React.createClass({displayName: "MyPanel",
+    render: function () {
+    return React.createElement(Alert, {bsStyle: "warning"}, 
+        React.createElement("strong", null, "Holy moley!"), 
+        "It's an ALERT!!1"
+    );
+    }
+});
+});
+
+
 //# sourceMappingURL=app.js.map
