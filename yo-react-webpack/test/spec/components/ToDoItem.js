@@ -4,7 +4,7 @@ describe('ToDoItem', function () {
   var ToDoItem, component;
 
   beforeEach(function () {
-    ToDoItem = require('../../../src/scripts/components/ToDoItem.jsx');
+    ToDoItem = require('./ToDoItem.jsx');
     component = ToDoItem();
   });
 

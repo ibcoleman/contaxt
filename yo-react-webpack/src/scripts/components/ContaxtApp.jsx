@@ -92,5 +92,5 @@ var ContaxtApp = React.createClass({
 });
 
 
-React.render(<ContaxtApp flux={flux}/>, document.getElementById('content')); // jshint ignore:line
+//React.render(<ContaxtApp flux={flux}/>, document.getElementById('content')); // jshint ignore:line
 

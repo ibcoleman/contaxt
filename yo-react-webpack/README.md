@@ -10,3 +10,4 @@ https://github.com/newtriks/generator-react-webpack
 http://fluxxor.com/
 http://sass-lang.com/
 http://react-bootstrap.github.io/
+npm install --save bootstrap

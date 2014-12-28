@@ -28,7 +28,10 @@ module.exports = function (config) {
           loader: 'url-loader?limit=10000&mimetype=image/png'
         }, {
           test: /\.jsx$/,
-          loader: 'jsx-loader'
+          loader: 'jsx-loader?harmony'
+        }, {
+            test: /\.(eot|woff|svg|ttf)$/,
+            loader: 'file-loader'
         }]
       }
     },
@@ -38,7 +41,7 @@ module.exports = function (config) {
       }
     },
     exclude: [],
-    port: 8080,
+    port: 9994,
     logLevel: config.LOG_INFO,
     colors: true,
     autoWatch: false,

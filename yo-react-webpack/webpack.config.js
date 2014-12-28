@@ -20,7 +20,8 @@ module.exports = {
   devtool: false,
   entry: [
       'webpack/hot/only-dev-server',
-      './src/scripts/components/ContaxtApp.jsx'
+      './src/scripts/components/ContaxtApp.jsx',
+      './src/scripts/components/HotelApp.jsx'
   ],
   stats: {
     colors: true,
@@ -28,6 +29,7 @@ module.exports = {
   },
 
   resolve: {
+    modulesDirectories: ["node_modules"],
     extensions: ['', '.js', '.jsx']
   },
   module: {
@@ -48,6 +50,9 @@ module.exports = {
     }, {
       test: /\.(png|jpg)$/,
       loader: 'url-loader?limit=8192'
+    }, {
+        test: /\.(eot|woff|svg|ttf)$/,
+        loader: 'file-loader'
     }]
   },
 
