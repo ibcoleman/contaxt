@@ -9,8 +9,7 @@ var Alert = ReactBootstrap.Alert;
 exports.MyPanel = React.createClass({
     render: function () {
     return <Alert bsStyle="warning">
-        <strong>Holy moley!</strong>
-        It's an ALERT!!1
+        <strong>${banner_warning}</strong>
     </Alert>;
     }
 });
