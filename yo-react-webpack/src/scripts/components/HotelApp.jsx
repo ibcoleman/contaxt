@@ -24,6 +24,7 @@ var HotelStore = require('../stores/HotelStore');
 var HotelActions = require('../actions/HotelActions');
 var Navigation = require('./Navigation');
 var HotelTable = require('./HotelTable');
+var HotelForm = require('./HotelForm');
 
 var stores = {
     HotelStore: new HotelStore()
@@ -31,6 +32,9 @@ var stores = {
 
 var flux = new Fluxxor.Flux(stores, HotelActions);
 
+/**
+ * Logging on dispatch
+ */
 flux.on("dispatch", function (type, payload) {
     if (console && console.log) {
         console.log("[Dispatch]", type, payload);
@@ -62,13 +66,12 @@ var HotelApp = React.createClass({
                 <Grid>
                     <Row className="clearfix">
                         <Col xs={12} md={12}>
-
-                            <Navigation></Navigation>
-
-                            <HotelTable></HotelTable>
+                            <Navigation />
+                            <HotelForm />
+                            <HotelTable hotels={this.state.hotels} />
                         </Col>
                     </Row>
-                    <Button onClick={this.doTheThing}>Go!</Button>
+                    <Button onClick={this.doTheThing}>Get All!</Button>
                 </Grid>
             </Panel>
         );
@@ -78,7 +81,6 @@ var HotelApp = React.createClass({
         this.getFlux().actions.doTheThing(this.state.newHotelText);
         this.setState({newHotelText: "Already submitted"});
     }
-
 });
 
 React.render(<HotelApp flux={flux}/>, document.getElementById('hotelApp')); // jshint ignore:line
