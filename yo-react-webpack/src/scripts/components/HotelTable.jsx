@@ -9,7 +9,7 @@ var React = require('react/addons');
 var Fluxxor = require('fluxxor');
 var FluxMixin = Fluxxor.FluxMixin(React);
 
-var Table = require('react-bootstrap/Table');
+var Table = require('react-bootstrap/lib/Table');
 
 require('../../styles/HotelTable.sass');
 

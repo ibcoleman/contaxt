@@ -5,11 +5,11 @@
 'use strict';
 
 var React = require('react/addons');
-var Nav = require('react-bootstrap/Nav');
-var Navbar = require('react-bootstrap/Navbar');
-var NavItem = require('react-bootstrap/NavItem');
-var DropdownButton = require('react-bootstrap/DropdownButton');
-var MenuItem = require('react-bootstrap/MenuItem');
+var Nav = require('react-bootstrap/lib/Nav');
+var Navbar = require('react-bootstrap/lib/Navbar');
+var NavItem = require('react-bootstrap/lib/NavItem');
+var DropdownButton = require('react-bootstrap/lib/DropdownButton');
+var MenuItem = require('react-bootstrap/lib/MenuItem');
 
 require('../../styles/Navigation.sass');
 

@@ -12,11 +12,11 @@ var React = require('react/addons');
 // Export React so the devtools can find it
 (window !== window.top ? window.top : window).React = React;
 
-var Panel = require('react-bootstrap/Panel');
-var Grid = require('react-bootstrap/Grid');
-var Row = require('react-bootstrap/Row');
-var Col = require('react-bootstrap/Col');
-var Button = require('react-bootstrap/Button');
+var Panel = require('react-bootstrap/lib/Panel');
+var Grid = require('react-bootstrap/lib/Grid');
+var Row = require('react-bootstrap/lib/Row');
+var Col = require('react-bootstrap/lib/Col');
+var Button = require('react-bootstrap/lib/Button');
 
 
 var Fluxxor = require('fluxxor');
